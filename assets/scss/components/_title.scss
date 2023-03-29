@@ -1,0 +1,17 @@
+.heading {
+  &-L {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--title-color);
+  }
+  &-M {
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: var(--title-color);
+  }
+  &-S {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--title-color);
+  }
+}

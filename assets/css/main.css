@@ -10,8 +10,10 @@
   --title-color: #030303;
   --text-color: #7A746E;
   --negative-text-color: #FFF7F0;
-  --btn-color: #EB7565;
-  --btn-color-hover: #F6A560;
+  --btn-color: #030303;
+  --btn-color-hover: #755CDE;
+  --btn-color-lightred: #EB7565;
+  --btn-color-lightred-hover: #F6A560;
   --background-color: #FFF7F0;
   --graphic-square: url("../../images/pattern-graphic-design.svg");
   --uiux-square: url("../../images/pattern-ui-ux.svg");
@@ -130,7 +132,65 @@ pre {
 html {
   font-size: var(--general-font-size);
   font-family: var(--font-family);
+  color: var(--text-color);
   font-weight: 500;
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 2em 0;
+}
+
+.wrapper {
+  width: var(--wrapper-width);
+  margin: auto;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 3rem;
+}
+
+.heading-L {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--title-color);
+}
+.heading-M {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: var(--title-color);
+}
+.heading-S {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.btn-consultation {
+  padding: 0.75em 1.75em;
+  border-radius: 2em;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: background-color 200ms;
+  color: var(--negative-text-color);
+  cursor: pointer;
+}
+.btn-consultation--black {
+  background-color: var(--btn-color);
+}
+.btn-consultation--black:hover {
+  background-color: var(--btn-color-hover);
+}
+.btn-consultation--lightred {
+  background-color: var(--btn-color-lightred);
+}
+.btn-consultation--lightred:hover {
+  background-color: var(--btn-color-lightred-hover);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,3 +6,11 @@
   './base/fonts',
   './base/typography',
   './base/base';
+
+@import 
+  './layout/hero',
+  './layout/header';
+
+@import
+  './components/title',
+  './components/buttons'; 
