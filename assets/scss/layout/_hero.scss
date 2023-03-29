@@ -1,0 +1,11 @@
+.hero {
+  margin: 2em 0;
+  &__title {
+    text-align: center;
+  }
+  &__description {
+    margin: 1em 1em;
+    font-size: 1rem;
+    text-align: center;
+  }
+}

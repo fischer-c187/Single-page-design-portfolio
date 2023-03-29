@@ -146,6 +146,34 @@ body {
   margin: auto;
 }
 
+.hero {
+  margin: 2em 0;
+}
+.hero__title {
+  text-align: center;
+}
+.hero__description {
+  margin: 1em 1em;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.presentation {
+  text-align: center;
+  margin: 6em 0;
+}
+.presentation__image {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+.presentation__text {
+  margin-top: 2.5em;
+}
+.presentation__description {
+  margin: 1.5em 0.5em;
+}
+
 .header-top {
   display: flex;
   align-items: center;
