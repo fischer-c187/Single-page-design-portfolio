@@ -3,43 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Single-page design portfolio</title>
 </head>
 <body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-top">
+        <img src="./assets/images/logo.svg" alt="logo" aria-hidden="true" class="header__logo">
+        <button type="button" class="btn-consultation header__btn">Free Consultation</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="hero__title heading-L">Design solutions made easy</h1>
+        <p class="hero__description">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+        <div class="skill">
+          <ul class="skill_grid">
+            <li class="skill__item">Graphic Design</li>
+            <li class="skill__item">UI/UX</li>
+            <li class="skill__item">Apps</li>
+            <li class="skill__item">Photography</li>
+            <li class="skill__item">Illustrations</li>
+            <li class="skill__item">Motion Graphics</li>
+          </ul>
+        </div>
+      </section>
+      <section class="presentation">
+        <h2 class="heading-M presentation__title">I’m Amy, and I’d love to work on your next project</h2>
+        <p class="presentation__description">
+          I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations
+          to complete mobile apps. I’m also handy with a camera!
+        </p>
+        <button type="button" class="btn-consultation presentation__btn">Free Consultation</button>
+      </section>
+    </main>
 
-  Free Consultation
 
-  Design solutions made easy
-
-  With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
-
-  Graphic Design
-  UI/UX
-  Apps
-  Photography
-  Illustrations
-  Motion Graphics
-
-  I’m Amy, and I’d love to work on your next project
-
-  I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
-  to complete mobile apps. I’m also handy with a camera!
-
-  Free Consultation
-
-  My Work
-
-  Book a call with me
-
-  I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
-  free consultation. Then we can move forward from there.
-
-  Free Consultation
-
-  Free Consultation
-
+  </div>
+  <div class="wrapper">
+    <section class="contact">
+      <div class="contact__text">
+        <h2 class="heading-M contact__title">Book a call with me</h2>
+        <p class="contact__description">
+          I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
+          free consultation. Then we can move forward from there.
+        </p>
+      </div>
+      <button type="button" class="btn-consultation btn-consultation--pink presentation__btn">Free Consultation</button>
+    </section>
+    <footer class="footer">
+      <div class="header-top">
+        <img src="./assets/images/logo.svg" alt="logo" aria-hidden="true" class="header__logo">
+        <button type="button" class="btn-consultation header__btn">Free Consultation</button>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

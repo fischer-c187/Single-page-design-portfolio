@@ -12,6 +12,7 @@
   --negative-text-color: #FFF7F0;
   --btn-color: #EB7565;
   --btn-color-hover: #F6A560;
+  --background-color: #FFF7F0;
   --graphic-square: url("../../images/pattern-graphic-design.svg");
   --uiux-square: url("../../images/pattern-ui-ux.svg");
   --illustrations-square: url("../../images/pattern-illustrations.svg");
@@ -129,6 +130,7 @@ pre {
 html {
   font-size: var(--general-font-size);
   font-family: var(--font-family);
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */
