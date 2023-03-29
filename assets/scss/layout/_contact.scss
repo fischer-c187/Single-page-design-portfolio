@@ -1,0 +1,17 @@
+.contact {
+  text-align: center;
+  background-color: var(--background-contact);
+  color: var(--negative-text-color);
+  padding:  min(12%, 5rem) min(10%, 4rem);
+  border-radius: 10px;
+  margin-bottom: 3.5em;
+
+  & .contact__title {
+    color: var(--negative-text-color);
+  }
+
+  &__description {
+    margin: 1.5em 0;
+    line-height: 26px;
+  }
+}

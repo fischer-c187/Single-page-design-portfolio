@@ -14,6 +14,7 @@
   --btn-color-hover: #755CDE;
   --btn-color-lightred: #EB7565;
   --btn-color-lightred-hover: #F6A560;
+  --background-contact: #030303;
   --background-color: #FFF7F0;
   --graphic-square: url("../../images/pattern-graphic-design.svg");
   --uiux-square: url("../../images/pattern-ui-ux.svg");
@@ -172,6 +173,22 @@ body {
 }
 .presentation__description {
   margin: 1.5em 0.5em;
+}
+
+.contact {
+  text-align: center;
+  background-color: var(--background-contact);
+  color: var(--negative-text-color);
+  padding: min(12%, 5rem) min(10%, 4rem);
+  border-radius: 10px;
+  margin-bottom: 3.5em;
+}
+.contact .contact__title {
+  color: var(--negative-text-color);
+}
+.contact__description {
+  margin: 1.5em 0;
+  line-height: 26px;
 }
 
 .header-top {
