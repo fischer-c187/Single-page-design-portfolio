@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+:root {
+  --purple-square-color: #755CDE;
+  --orange-square-color: #F6A560;
+  --pink-square-color: #F39E9E;
+  --lightred-square-color: #EB7565;
+  --green-square-color: #61C4B7;
+  --burgundy-square-color: #552049;
+  --title-color: #030303;
+  --text-color: #7A746E;
+  --negative-text-color: #FFF7F0;
+  --btn-color: #EB7565;
+  --btn-color-hover: #F6A560;
+  --graphic-square: url("../../images/pattern-graphic-design.svg");
+  --uiux-square: url("../../images/pattern-ui-ux.svg");
+  --illustrations-square: url("../../images/pattern-illustrations.svg");
+  --app-square: url("../../images/pattern-apps.svg");
+  --photography-square: url("../../images/pattern-photography.svg");
+  --motiongraphic-square: url("../../images/pattern-motion-graphics.svg");
+  --wrapper-width: clamp(360px, 90%, 1400px);
+  --general-font-size: 16px;
+  --heading-l-font-size: 3.5rem;
+  --heading-m-font-size: 2.5em;
+  --heading-s-font-size: 2rem;
+  --text-font-size: 1.125rem;
+  --font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/***
+    The new CSS reset - version 1.8.2 (last updated 23.12.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+pre {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: "";
+}
+
+/* fix the feature of 'hidden' attribute.
+ display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+ - fix for the content editable attribute will work properly.
+ - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+html {
+  font-size: var(--general-font-size);
+  font-family: var(--font-family);
+}
+
+/*# sourceMappingURL=main.css.map */

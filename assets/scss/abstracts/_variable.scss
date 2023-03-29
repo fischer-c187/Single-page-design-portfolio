@@ -1,0 +1,35 @@
+:root {
+  // color
+  --purple-square-color: #755CDE;
+  --orange-square-color: #F6A560;
+  --pink-square-color: #F39E9E;
+  --lightred-square-color: #EB7565;
+  --green-square-color: #61C4B7;
+  --burgundy-square-color: #552049;
+  --title-color: #030303;
+  --text-color: #7A746E;
+  --negative-text-color: #FFF7F0;
+  --btn-color: #EB7565;
+  --btn-color-hover: #F6A560;
+
+  // path image
+  --graphic-square: url('../../images/pattern-graphic-design.svg');
+  --uiux-square: url('../../images/pattern-ui-ux.svg');
+  --illustrations-square: url('../../images/pattern-illustrations.svg');
+  --app-square: url('../../images/pattern-apps.svg');
+  --photography-square: url('../../images/pattern-photography.svg');
+  --motiongraphic-square: url('../../images/pattern-motion-graphics.svg');
+
+  //  size
+  --wrapper-width: clamp(360px, 90%, 1400px);
+
+  // font-size
+  --general-font-size: 16px;
+  --heading-l-font-size: 3.5rem;
+  --heading-m-font-size: 2.5em;
+  --heading-s-font-size: 2rem;
+  --text-font-size: 1.125rem;
+
+  // font-family
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+}
