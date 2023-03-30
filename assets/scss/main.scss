@@ -1,5 +1,6 @@
 @import 
-  './abstracts/variable';
+  './abstracts/variable',
+  './abstracts/mixins';
 
 @import 
   './base/reset',
@@ -11,6 +12,7 @@
   './layout/hero',
   './layout/presentation',
   './layout/contact',
+  './layout/skill',
   './layout/header';
 
 @import

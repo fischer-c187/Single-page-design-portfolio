@@ -6,6 +6,19 @@
   border-radius: 10px;
   margin-bottom: 3.5em;
 
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  &__text {
+    @include desktop {
+      width: 50%;
+    }
+  }
+
   & .contact__title {
     color: var(--negative-text-color);
   }
@@ -13,5 +26,10 @@
   &__description {
     margin: 1.5em 0;
     line-height: 26px;
+
+    @include desktop {
+      margin-bottom: 0;
+      font-size: 1.125rem;
+    }
   }
 }

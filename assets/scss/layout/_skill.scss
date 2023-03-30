@@ -1,0 +1,62 @@
+.skill {
+  &__grid {
+    margin-top: max(6%, 1.5rem);
+    display: grid;
+    grid-template: repeat(6, 180px) / repeat(2, minmax(160px, 1fr));
+    gap: 1em;
+    color: var(--negative-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    @include tablet {
+      grid-template: repeat(3, 180px) / repeat(4, minmax(160px, 1fr));
+    }
+
+    @include desktop {
+      grid-template: repeat(2, 180px) / repeat(6, minmax(0, 1fr));
+    }
+    
+  }
+
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+    border-radius: 8px;
+
+    &--graphic {
+      grid-column: span 2;
+      grid-row: span 2;
+      background: var(--purple-square-color) var(--graphic-square) no-repeat top 1em right 1em;
+    }
+
+    &--uiux {
+      background: var(--orange-square-color) var(--uiux-square) no-repeat top 1em right 1em;
+    }
+
+    &--apps {
+      background: var(--pink-square-color) var(--app-square) no-repeat top 1em right 1em;
+    }
+
+    &--illustration {
+      grid-column: span 2;
+      background: var(--lightred-square-color) var(--illustrations-square) no-repeat top 1em right 1em;
+    }
+
+    &--photography {
+      grid-column: span 2;
+      background: var(--green-square-color) var(--photography-square) no-repeat top 1em right 1em;
+
+      @include desktop {
+        grid-column: 5 /span 2;
+        grid-row: 1;
+      }
+    }
+
+    &--motion {
+      grid-column: span 2;
+      background: var(--burgundy-square-color) var(--motion-square) no-repeat top 1em right 1em;
+    }
+  }
+}
