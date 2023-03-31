@@ -1,0 +1,23 @@
+{
+  "name": "single-page-design-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fischer-c187/Single-page-design-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fischer-c187/Single-page-design-portfolio/issues"
+  },
+  "homepage": "https://github.com/fischer-c187/Single-page-design-portfolio#readme",
+  "devDependencies": {
+    "eslint": "^8.37.0"
+  }
+}

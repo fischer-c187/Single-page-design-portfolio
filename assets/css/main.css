@@ -22,6 +22,8 @@
   --app-square: url("../images/pattern-apps.svg");
   --photography-square: url("../images/pattern-photography.svg");
   --motion-square: url("../images/pattern-motion-graphics.svg");
+  --left-icon: url("../images/icon-arrow-left.svg");
+  --right-icon: url("../images/icon-arrow-right.svg");
   --wrapper-width: clamp(345px, 90%, 1400px);
   --general-font-size: 16px;
   --heading-l-font-size: 3.5rem;
@@ -363,6 +365,70 @@ body {
   .heading-S {
     font-size: 2rem;
   }
+}
+
+.carousel {
+  overflow: hidden;
+  margin-bottom: 6em;
+}
+.carousel__title {
+  text-align: center;
+}
+.carousel ul {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  transition: transform 800ms ease-in-out;
+}
+.carousel__item {
+  display: block;
+  padding: 0 1em;
+  min-width: min(70%, 540px);
+}
+.carousel__image {
+  width: 100%;
+}
+.carousel__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.carousel__button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--btn-color);
+  position: relative;
+  transition: background-color 200ms;
+  cursor: pointer;
+}
+.carousel__button:active {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3) inset;
+}
+.carousel__button:hover {
+  background-color: var(--btn-color-hover);
+}
+.carousel__button.right-btn::after {
+  content: "";
+  color: white;
+  background: var(--right-icon) no-repeat left 50% top 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.carousel__button.left-btn::after {
+  content: "";
+  color: white;
+  background: var(--left-icon) no-repeat left 50% top 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
 
 .btn-consultation {
