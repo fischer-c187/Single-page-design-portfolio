@@ -132,6 +132,64 @@ pre {
   -webkit-user-drag: element;
 }
 
+@keyframes headerAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes titleSlideUp {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+.title--appear {
+  overflow: hidden;
+}
+.title--appear span {
+  display: block;
+  transform: translateY(100px);
+  animation: 1s 1200ms titleSlideUp ease-out forwards;
+}
+
+.header--appear {
+  animation: 2s cubic-bezier(0.18, 0.89, 0.32, 1.28) headerAppear;
+}
+
+.grid--appear {
+  overflow: hidden;
+  position: relative;
+}
+.grid--appear::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: -75%;
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+  z-index: 2;
+  animation: shine 1s 2s;
+}
+
 html {
   font-size: var(--general-font-size);
   font-family: var(--font-family);
